@@ -1338,24 +1338,10 @@ h6 {
   gap: 5vh;
 }
 
-.services-intro {
-  display: flex;
-  height: 100vh;
-  gap: 5vw;
-  max-height: 100vh;
-}
-
-.services-intro-tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .services-header {
   font-size: 2.5vw;
   text-align: center;
   padding: 1em;
-  height: 40vh;
   min-height: fit-content;
 }
 
@@ -1363,7 +1349,6 @@ h6 {
   font-size: 1.4vw;
   text-align: center;
   padding: 1em;
-  height: 20vh;
   min-height: fit-content;
 }
 
@@ -1429,12 +1414,17 @@ ul {
 
 .service-present {
   display: grid;
-  gap: 5vh;
+  gap: 2rem;
   justify-items: stretch;
 }
 
+.contact-container {
+  align-self: center;
+}
+
 #pipelines {
-  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 2fr 1fr;
 }
 
 #software {
@@ -1542,7 +1532,6 @@ ul {
   width: 100%;
   text-align: center;
   font-size: 1.5vw;
-  height: 10vh;
   font-weight: 300;
   transition: box-shadow 0.2s ease-out, font-weight 0.2s ease-out, opacity 0.2s ease-out;
 }
@@ -1972,14 +1961,8 @@ ul {
     height: auto;
   }
 
-  .home-left {
-    height: auto;
-    padding: 1rem;
-  }
-
   .home-header-white {
     font-size: 1.2rem;
-    height: auto;
   }
 
   .home-profile {
@@ -2101,12 +2084,8 @@ ul {
   }
 
   .service-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     gap: 1rem;
-  }
-
-    {
-    font-size: 4vw;
   }
 
   .decrypted-small,
@@ -2344,5 +2323,17 @@ ul {
   .outer-vignette,
   .center-vignette {
     display: none;
+  }
+
+  #data_analysis,
+  #software,
+  #consulting,
+  #pipelines {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+
+  .section-middle {
+    padding-top: 20% !important;
   }
 }
