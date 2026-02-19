@@ -4,7 +4,6 @@
 .hero-section {
     display: flex;
     height: 100vh;
-    margin-top: 7vh;
     gap: 5%;
     justify-content: space-between;
 }
@@ -20,12 +19,95 @@
 
 .data-discovery-container {
     min-width: max-content;
-    width: 40vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: end;
+    color: black;
+    font-size: 50px;
+}
+
+.hero-table {
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    gap: 10px;
+}
+
+.hero-table-tile {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-between;
+}
+
+.hero-table-tile:hover {
+        transform: scale(1.01);
+    box-shadow: inset 0px 0px 20px 3px #00000038 !important;
+}
+
+.tile-white-blue {
+    background:  var(--gradient-white-blue);
+}
+
+.tile-white-orange {
+    background:  var(--gradient-white-orange);
+}
+
+.tile-white-green {
+    background:  var(--gradient-white-green);
+}
+
+.tile-midnight { 
     color: white;
+    background:  var(--gradient-midnight);
+    border: 1px solid white
+}
+
+.tile-midnight-skew { 
+    color: white;
+    background:  var(--gradient-midnight-skew);
+    border: 1px solid white
+}
+
+.tile-green-white {
+    background:  var(--gradient-green-white);
+}
+
+.tile-radial-green {
+    background:  var(--gradient-radial-green);
+}
+
+.tile-bottom {
+    border-top: 1px solid black;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.hero-table-content {
+    height: 70%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.table-software {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    height: unset;
+    margin: unset;
+}
+
+.hero-table-header {
+    font-size: 40px;
+    font-weight: 100;
+    height: 20%
+}
+
+.hero-table-content p {
+    font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -107,9 +189,8 @@
 
 /* Styles for "From Data to Discovery" box */
 .decrypted-data {
-    font-size: 4vw;
     font-family: monospace;
-    margin-top: 100px;
+    font-size: 70px;
 }
 
 @media (max-width: 768px) {
@@ -120,26 +201,29 @@
 }
 
 .decrypted-discovery {
-    font-size: 6vw;
-    margin-top: 30px;
     font-family: serif;
     width: fit-content;
     text-underline-position: under;
     text-decoration: underline;
     text-decoration-thickness: from-font;
+    font-size: 70px;
 }
 
 .decrypted-from {
-    font-size: 5vw;
     text-align: center;
 }
 
 .decrypted-to {
-    font-size: 4vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
     text-align: center;
     font-weight: 300;
+}
+
+.decrypted-side {
+        width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 @media (max-width: 768px) {
