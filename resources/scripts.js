@@ -75,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
       this.animationId = null;
       this.lastGlitchTime = Date.now();
       this.lettersAndSymbols = [
-        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+        'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         '!', '@', '#', '$', '&', '*', '(', ')', '-', '_', '+', '=', '/',
         '[', ']', '{', '}', ';', ':', '<', '>', ',', '0', '1', '2', '3',
         '4', '5', '6', '7', '8', '9'
@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // --- Decrypted text animation ---
   function decryptText(element, fullText, duration) {
-    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    const chars = "abcdefghijklnopqrstuvwxyz0123456789";
     const length = fullText.length;
     let frame = 0;
     const totalFrames = Math.floor(duration / 40);
